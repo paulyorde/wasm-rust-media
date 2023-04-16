@@ -1,0 +1,16 @@
+[package]
+name = "audio_01"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.73"
+wasm-bindgen-futures = "0.4.20"
+web-sys = { version = "0.3.50", features = ["AudioContext", "MediaStream", "Navigator"] }
+js-sys = "0.3.59"
+
